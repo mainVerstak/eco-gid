@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <img src="images/logo.png" alt="Eco-Gid">
+      </a>
+      <div class="header__contacts">
+        <span class="header__contacts-label">
+          Связать с нами:
+        </span>
+        <a href="mailto:ecogid@mail.ru" class="header__mail">
+          ecogid@mail.ru
+        </a>
+      </div>
+      <div class="header__search">
+        <div class="header-search">
+          <input type="search" class="header-search__input" placeholder="Город или компания">
+          <div class="header-search__icon">
+            <svg width="14" height="14" viewBox="0 0 14 14">
+              <use xlink:href="images/svg-icons.svg#icon-search"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="header__user">
+        <a href="#" class="header-signin">
+          <svg width="18" height="20" viewBox="0 0 18 20" class="header-signin__icon">
+            <use xlink:href="images/svg-icons.svg#icon-signin"></use>
+          </svg>
+          Вход
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+        <div class="container">
+            <div>
+                <button class="btn" data-modal="#modal-application">
+                    modal
+                </button>
+                <a href="#modal-application" class="btn" data-modal>
+                    modal
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <div class="footer__logo">
+          <img src="images/logo.png" alt="Eco-Gid">
+        </div>
+        <div class="footer__info">
+          <div class="footer__copy">
+            © ООО «Пиар сити», 2001 – 2018
+          </div>
+          <a href="#" class="footer__term">
+            Пользовательское соглашение
+          </a>
+        </div>
+      </div>
+      <div class="footer__right">
+        <div class="footer-contacts">
+          <div class="footer-contacts__item">
+            <div class="footer-contacts__label">
+              По вопросам размещения
+            </div>
+            <a href="tel:+79660995862" class="footer-contacts__phone">
+              +7 (966) 099-58-62
+            </a>
+          </div>
+          <div class="footer-contacts__item">
+            <div class="footer-contacts__label">
+              Электронная почта
+            </div>
+            <a href="mailto:ov@pr.city" class="footer-contacts__mail">
+              ov@pr.city
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <div class="modal js-modal-hide" id="modal-application">
+        <div class="modal__outer">
+            <div class="modal__inner js-modal-hide">
+                <div class="modal__body">
+                    <div class="modal-close modal__close js-modal-hide"></div>
+                    <div class="modal__head">
+                        <div class="h1 modal__title">
+                            Оставить заявку
+                        </div>
+                    </div>
+                    <div class="modal__content">
+                        <div class="modal__row">
+                            <input type="text" class="input-style" placeholder="Как вас зовут?">
+                        </div>
+                        <div class="modal__row">
+                            <input type="text" class="input-style" placeholder="Ваш номер телефона">
+                        </div>
+                        <div class="modal__row">
+                            <input type="text" class="input-style" placeholder="Ваш электронный адрес">
+                        </div>
+                        <div class="modal__row">
+                            <label class="checkbox">
+                                <input type="checkbox" name="filter-working-hours" class="checkbox__input">
+                                <span class="checkbox__checkmark"></span>
+                                <span>Согласен на <a href="vip.html" target="_blank">обработку данных</a></span>
+                            </label>
+                        </div>
+                        <button class="btn btn_size_big btn_w_100p modal__btn-send js-modal-hide">
+                            Оставить заявку
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script async src="https://api-maps.yandex.ru/2.1/?lang=ru-RU&onload=getYaMap" type="text/javascript"></script>
+</body>
+
+</html>

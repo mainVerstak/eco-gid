@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <img src="images/logo.png" alt="Eco-Gid">
+      </a>
+      <div class="header__contacts">
+        <span class="header__contacts-label">
+          Связать с нами:
+        </span>
+        <a href="mailto:ecogid@mail.ru" class="header__mail">
+          ecogid@mail.ru
+        </a>
+      </div>
+      <div class="header__search">
+        <div class="header-search">
+          <input type="search" class="header-search__input" placeholder="Город или компания">
+          <div class="header-search__icon">
+            <svg width="14" height="14" viewBox="0 0 14 14">
+              <use xlink:href="images/svg-icons.svg#icon-search"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="header__user">
+        <a href="#" class="header-signin">
+          <svg width="18" height="20" viewBox="0 0 18 20" class="header-signin__icon">
+            <use xlink:href="images/svg-icons.svg#icon-signin"></use>
+          </svg>
+          Вход
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+        <div class="container main-grid">
+            <div class="sidebar sidebar_filter main-grid__sidebar">
+                <aside class="sidebar__outer">
+                    <div class="sidebar__inner">
+                        <div class="modal-close sidebar__filter-close js-filter-close"></div>
+                        <div class="sidebar__content">
+                            <div class="sidebar__item">
+                                <div class="sidebar__label">
+                                    Город
+                                </div>
+                                <div class="sidebar__select">
+                                    <select class="js-select-search select-style">
+                                        <option value="0" selected>Любой</option>
+                                        <option value="1">Санкт-Петербург</option>
+                                        <option value="2">Город2</option>
+                                        <option value="3">Город3</option>
+                                        <option value="4">Город4</option>
+                                        <option value="5">Город5</option>
+                                        <option value="6">Город6</option>
+                                        <option value="7">Город7</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="sidebar__item">
+                                <div class="sidebar__label">
+                                    По времени работы
+                                </div>
+                                <ul class="sidebar__check-list">
+                                    <li>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="filter-working-hours" class="checkbox__input">
+                                            <span class="checkbox__checkmark"></span>
+                                            Круглосуточно
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="filter-working-hours" class="checkbox__input">
+                                            <span class="checkbox__checkmark"></span>
+                                            Работают в выходные
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="filter-working-hours" class="checkbox__input">
+                                            <span class="checkbox__checkmark"></span>
+                                            Работают в будни
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar__item">
+                                <div class="sidebar__label">
+                                    Принимают
+                                </div>
+                                <ul class="sidebar__check-list">
+                                    <li>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="filter-accept-items" class="checkbox__input">
+                                            <span class="checkbox__checkmark"></span>
+                                            Бумагу
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="filter-accept-items" class="checkbox__input">
+                                            <span class="checkbox__checkmark"></span>
+                                            Картон
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="filter-accept-items" class="checkbox__input">
+                                            <span class="checkbox__checkmark"></span>
+                                            Гофрокартон
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="filter-accept-items" class="checkbox__input">
+                                            <span class="checkbox__checkmark"></span>
+                                            Книги
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="filter-accept-items" class="checkbox__input">
+                                            <span class="checkbox__checkmark"></span>
+                                            Газеты
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="filter-accept-items" class="checkbox__input">
+                                            <span class="checkbox__checkmark"></span>
+                                            Документы и архивы
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="filter-accept-items" class="checkbox__input">
+                                            <span class="checkbox__checkmark"></span>
+                                            Брак печати
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="filter-accept-items" class="checkbox__input">
+                                            <span class="checkbox__checkmark"></span>
+                                            МС-1 и другие
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar__item">
+                                <div class="sidebar__label">
+                                    Сотрудничают
+                                </div>
+                                <ul class="sidebar__check-list">
+                                    <li>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="filter-cooperate" class="checkbox__input">
+                                            <span class="checkbox__checkmark"></span>
+                                            С юридическими лицами
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="filter-cooperate" class="checkbox__input">
+                                            <span class="checkbox__checkmark"></span>
+                                            С физическими лицами
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar__item">
+                                <div class="sidebar__label">
+                                    Дополнительно
+                                </div>
+                                <ul class="sidebar__check-list">
+                                    <li>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="filter-additionally" class="checkbox__input">
+                                            <span class="checkbox__checkmark"></span>
+                                            Вывоз
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="filter-additionally" class="checkbox__input">
+                                            <span class="checkbox__checkmark"></span>
+                                            Есть фото
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="filter-additionally" class="checkbox__input">
+                                            <span class="checkbox__checkmark"></span>
+                                            Есть сайт
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="filter-additionally" class="checkbox__input">
+                                            <span class="checkbox__checkmark"></span>
+                                            Расчет по карте
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="filter-additionally" class="checkbox__input">
+                                            <span class="checkbox__checkmark"></span>
+                                            Расчет наличными
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="filter-additionally" class="checkbox__input">
+                                            <span class="checkbox__checkmark"></span>
+                                            С парковкой
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar__item">
+                                <a href="#anchor-map-reception-points" data-anchor class="sidebar__label">
+                                    Смотреть на карте
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div class="main-grid__content">
+                <h1 class="h1 main-title main-title_maw700">
+                    Центроконсалт, центр экспертиз и экономико- правового консультирования (h1)
+                </h1>
+                <div class="breadcrumbs-box">
+                    <div class="breadcrumbs breadcrumbs-box__breadcrumbs">
+                        <div class="breadcrumbs__home">
+                            <a href="#">
+                                <svg width="16" height="17" viewBox="0 0 16 17">
+                                    <use xlink:href="images/svg-icons.svg#icon-home"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="#">
+                                    Россия
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="#">
+                                    Московская обл.
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="#">
+                                    Москва
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span>
+                                    ЗАО
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="breadcrumbs-box__sort">
+                        <span class="breadcrumbs-box__label">
+                            Сортировать:
+                        </span>
+                        <div class="breadcrumbs-box__sort-form">
+                            <div class="breadcrumbs-box__sort-select">
+                                <select class="js-select select-style select-style_ilnine">
+                                    <option value="0" selected>по рейтингу</option>
+                                    <option value="1">по рейтингу 2</option>
+                                    <option value="2">по рейтингу 222</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-finter">
+                    <svg width="24" height="20" viewBox="0 0 24 20" class="btn-finter__icon">
+                        <use xlink:href="images/svg-icons.svg#icon-filter"></use>
+                    </svg>
+                    Показать фильтр
+                </div>
+                <div class="inner-grid">
+                    <div class="inner-grid__content">
+                        <div class="card-list">
+                            <div class="card-item">
+  <div class="card-item__top">
+    <div class="card-item__head">
+      <h2 class="card-item__title">
+        <a href="#">
+          Экспресс Регистратор, юридическая фирма
+        </a>
+      </h2>
+      <div class="card-item-rate card-item__rate">
+        <div class="rating card-item-rate__rating">
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star _active">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star _active">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star _active">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star _active">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star _active">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          
+          
+        </div>
+        <a href="vip.html#anchor-review" class="card-item-rate__review">
+          12 отзывов
+        </a>
+      </div>
+    </div>
+    <div class="card-item__image">
+      <div class="card-item__logo">
+        <img src="images/company-logo-bg.png" alt="Экспресс Регистратор, юридическая фирма">
+      </div>
+    </div>
+    <div class="card-item__content">
+      <div class="card-item__text">
+        <p>
+          В активе нашей команды пять побед подряд. v, также имевший к этому моменту продолжительную серию побед. Занимающие второе место по голам в чемпионате егорьевцы не смогли 
+          
+          <span class="card-item__hidden">
+            В активе нашей команды пять побед подряд. v, также имевший к этому моменту продолжительную серию побед. Занимающие второе место по голам в чемпионате егорьевцы не смогли 
+          </span>
+          
+        </p>
+        
+        <div class="card-item__more">
+          <svg width="14" height="9" viewBox="0 0 14 9">
+            <use xlink:href="images/svg-icons.svg#arrow-down"></use>
+          </svg>
+          <span>
+            Полностью
+          </span>
+        </div>
+        
+      </div>
+      <div class="card-item__btns">
+        <a href="tel:+89257964567" class="btn card-item__btn">
+          Позвонить
+        </a>
+        <a href="vip.html#anchor-prices" class="btn btn_cart card-item__btn" data-anchor>
+          <svg width="24" height="24" viewBox="0 0 24 24" class="btn__icon">
+            <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="card-item__footer">
+    <ul class="card-item-contacts card-item__contacts">
+      <li class="card-item-contacts__item">
+        <a href="tel+" class="card-item-contacts__link card-item-contacts__link_green card-item-contacts__phone">
+          <svg width="17" height="17" viewBox="0 0 17 17" class="card-item-contacts__icon">
+            <use xlink:href="images/svg-icons.svg#icon-phone"></use>
+          </svg>
+          <span>
+            8 (925) 796-45-67
+          </span>
+        </a>
+      </li>
+      <li class="card-item-contacts__item">
+        <span class="card-item-contacts__link">
+          <svg width="17" height="20" viewBox="0 0 17 20" class="card-item-contacts__icon">
+            <use xlink:href="images/svg-icons.svg#icon-map-pin"></use>
+          </svg>
+          <span>
+            г. Москва, Савёлкинский проезд д. 6
+          </span>
+        </span>
+      </li>
+    </ul>
+    <ul class="social-list card-item__social">
+      
+      <li class="social-list__item">
+        <a href="#" class="social-link social-link_vk social-list__link" target="_blank">
+          <svg width="22" height="14" viewBox="0 0 22 14" class="social-link__icon">
+            <use xlink:href="images/svg-icons.svg#social-vk"></use>
+          </svg>
+        </a>
+      </li>
+      
+      
+      <li class="social-list__item">
+        <a href="#" class="social-link social-link_fb social-list__link" target="_blank">
+          <svg width="12" height="23" viewBox="0 0 12 23" class="social-link__icon">
+            <use xlink:href="images/svg-icons.svg#social-fb"></use>
+          </svg>
+        </a>
+      </li>
+      
+      
+      <li class="social-list__item">
+        <a href="#" class="social-link social-link_ig social-list__link" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 20 20" class="social-link__icon">
+            <use xlink:href="images/svg-icons.svg#social-ig"></use>
+          </svg>
+        </a>
+      </li>
+      
+      
+      <li class="social-list__item">
+        <a href="#" class="social-link social-link_yt social-list__link" target="_blank">
+          <svg width="23" height="16" viewBox="0 0 23 16" class="social-link__icon">
+            <use xlink:href="images/svg-icons.svg#social-yt"></use>
+          </svg>
+        </a>
+      </li>
+      
+      
+      <li class="social-list__item">
+        <a href="#" class="social-link social-link_tg social-list__link" target="_blank">
+          <svg width="19" height="17" viewBox="0 0 19 17" class="social-link__icon">
+            <use xlink:href="images/svg-icons.svg#social-tg"></use>
+          </svg>
+        </a>
+      </li>
+      
+      
+      <li class="social-list__item">
+        <a href="#" class="social-link social-link_ok social-list__link" target="_blank">
+          <svg width="14" height="23" viewBox="0 0 14 23" class="social-link__icon">
+            <use xlink:href="images/svg-icons.svg#social-ok"></use>
+          </svg>
+        </a>
+      </li>
+      
+      
+      <li class="social-list__item">
+        <a href="#" class="social-link social-link_wa social-list__link" target="_blank">
+          <svg width="21" height="21" viewBox="0 0 21 21" class="social-link__icon">
+            <use xlink:href="images/svg-icons.svg#social-wa"></use>
+          </svg>
+        </a>
+      </li>
+      
+      
+      <li class="social-list__item">
+        <a href="#" class="social-link social-link_vb social-list__link" target="_blank">
+          <svg width="21" height="23" viewBox="0 0 21 23" class="social-link__icon">
+            <use xlink:href="images/svg-icons.svg#social-vb"></use>
+          </svg>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+  
+  <div class="card-item__tags">
+    <a href="#" class="btn btn_tag btn_outline btn_dark card-item__tag">
+      Белая бумага
+    </a>
+    <a href="#" class="btn btn_tag btn_outline btn_dark card-item__tag">
+      Картон
+    </a>
+    <a href="#" class="btn btn_tag btn_outline btn_dark card-item__tag">
+      Газеты
+    </a>
+    <a href="#" class="btn btn_tag btn_outline btn_dark card-item__tag">
+      Журналы и книги
+    </a>
+    <a href="#" class="btn btn_tag btn_outline btn_dark card-item__tag">
+      Картон
+    </a>
+    <a href="#" class="btn btn_tag btn_outline btn_dark card-item__tag">
+      Газеты
+    </a>
+  </div>
+  
+</div><div class="card-item">
+  <div class="card-item__top">
+    <div class="card-item__head">
+      <h2 class="card-item__title">
+        <a href="#">
+          Центроконсалт, центр экспертиз и экономико-правового консультирования
+        </a>
+      </h2>
+      <div class="card-item-rate card-item__rate">
+        <div class="rating card-item-rate__rating">
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star _active">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star _active">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star _active">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star _active">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          
+          
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          
+        </div>
+        <a href="vip.html#anchor-review" class="card-item-rate__review">
+          12 отзывов
+        </a>
+      </div>
+    </div>
+    <div class="card-item__image">
+      <div class="card-item__logo">
+        <img src="images/company-logo-1.png" alt="Центроконсалт, центр экспертиз и экономико-правового консультирования">
+      </div>
+    </div>
+    <div class="card-item__content">
+      <div class="card-item__text">
+        <p>
+          В активе нашей команды пять побед подряд. v, также имевший к этому моменту продолжительную серию побед. Занимающие второе место по голам в чемпионате егорьевцы не смогли поразить ворота нашей команды, «Витязь» же провёл две результативные атаки. 
+          
+        </p>
+        
+      </div>
+      <div class="card-item__btns">
+        <a href="tel:+89257964567" class="btn card-item__btn">
+          Позвонить
+        </a>
+        <a href="vip.html#anchor-prices" class="btn btn_cart card-item__btn" data-anchor>
+          <svg width="24" height="24" viewBox="0 0 24 24" class="btn__icon">
+            <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="card-item__footer">
+    <ul class="card-item-contacts card-item__contacts">
+      <li class="card-item-contacts__item">
+        <a href="tel+" class="card-item-contacts__link card-item-contacts__link_green card-item-contacts__phone">
+          <svg width="17" height="17" viewBox="0 0 17 17" class="card-item-contacts__icon">
+            <use xlink:href="images/svg-icons.svg#icon-phone"></use>
+          </svg>
+          <span>
+            8 (925) 796-45-67
+          </span>
+        </a>
+      </li>
+      <li class="card-item-contacts__item">
+        <span class="card-item-contacts__link">
+          <svg width="17" height="20" viewBox="0 0 17 20" class="card-item-contacts__icon">
+            <use xlink:href="images/svg-icons.svg#icon-map-pin"></use>
+          </svg>
+          <span>
+            г. Москва, Савёлкинский проезд д. 6
+          </span>
+        </span>
+      </li>
+    </ul>
+    <ul class="social-list card-item__social">
+      
+      <li class="social-list__item">
+        <a href="#" class="social-link social-link_vk social-list__link" target="_blank">
+          <svg width="22" height="14" viewBox="0 0 22 14" class="social-link__icon">
+            <use xlink:href="images/svg-icons.svg#social-vk"></use>
+          </svg>
+        </a>
+      </li>
+      
+      
+      
+      <li class="social-list__item">
+        <a href="#" class="social-link social-link_ig social-list__link" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 20 20" class="social-link__icon">
+            <use xlink:href="images/svg-icons.svg#social-ig"></use>
+          </svg>
+        </a>
+      </li>
+      
+      
+      
+      <li class="social-list__item">
+        <a href="#" class="social-link social-link_tg social-list__link" target="_blank">
+          <svg width="19" height="17" viewBox="0 0 19 17" class="social-link__icon">
+            <use xlink:href="images/svg-icons.svg#social-tg"></use>
+          </svg>
+        </a>
+      </li>
+      
+      
+      
+      <li class="social-list__item">
+        <a href="#" class="social-link social-link_wa social-list__link" target="_blank">
+          <svg width="21" height="21" viewBox="0 0 21 21" class="social-link__icon">
+            <use xlink:href="images/svg-icons.svg#social-wa"></use>
+          </svg>
+        </a>
+      </li>
+      
+      
+    </ul>
+  </div>
+  
+  <div class="card-item__tags">
+    <a href="#" class="btn btn_tag btn_outline btn_dark card-item__tag">
+      Белая бумага
+    </a>
+    <a href="#" class="btn btn_tag btn_outline btn_dark card-item__tag">
+      Картон
+    </a>
+    <a href="#" class="btn btn_tag btn_outline btn_dark card-item__tag">
+      Газеты
+    </a>
+    <a href="#" class="btn btn_tag btn_outline btn_dark card-item__tag">
+      Журналы и книги
+    </a>
+    <a href="#" class="btn btn_tag btn_outline btn_dark card-item__tag">
+      Картон
+    </a>
+    <a href="#" class="btn btn_tag btn_outline btn_dark card-item__tag">
+      Газеты
+    </a>
+  </div>
+  
+</div><div class="card-item">
+  <div class="card-item__top">
+    <div class="card-item__head">
+      <h2 class="card-item__title">
+        <a href="#">
+          Экспресс Регистратор, юридическая фирма
+        </a>
+      </h2>
+      <div class="card-item-rate card-item__rate">
+        <div class="rating card-item-rate__rating">
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star _active">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star _active">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star _active">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star _active">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          
+          
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          
+        </div>
+        <a href="vip.html#anchor-review" class="card-item-rate__review">
+          12 отзывов
+        </a>
+      </div>
+    </div>
+    <div class="card-item__image">
+      <div class="card-item__logo">
+        <img src="images/company-logo-bg.png" alt="Экспресс Регистратор, юридическая фирма">
+      </div>
+    </div>
+    <div class="card-item__content">
+      <div class="card-item__text">
+        <p>
+          В активе нашей команды пять побед подряд. v, также имевший к этому моменту продолжительную серию побед. 
+          
+        </p>
+        
+      </div>
+      <div class="card-item__btns">
+        <a href="tel:+89257964567" class="btn card-item__btn">
+          Позвонить
+        </a>
+        <a href="vip.html#anchor-prices" class="btn btn_cart card-item__btn" data-anchor>
+          <svg width="24" height="24" viewBox="0 0 24 24" class="btn__icon">
+            <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="card-item__footer">
+    <ul class="card-item-contacts card-item__contacts">
+      <li class="card-item-contacts__item">
+        <a href="tel+" class="card-item-contacts__link card-item-contacts__link_green card-item-contacts__phone">
+          <svg width="17" height="17" viewBox="0 0 17 17" class="card-item-contacts__icon">
+            <use xlink:href="images/svg-icons.svg#icon-phone"></use>
+          </svg>
+          <span>
+            8 (925) 796-45-67
+          </span>
+        </a>
+      </li>
+      <li class="card-item-contacts__item">
+        <span class="card-item-contacts__link">
+          <svg width="17" height="20" viewBox="0 0 17 20" class="card-item-contacts__icon">
+            <use xlink:href="images/svg-icons.svg#icon-map-pin"></use>
+          </svg>
+          <span>
+            г. Москва, Савёлкинский проезд д. 6
+          </span>
+        </span>
+      </li>
+    </ul>
+    <ul class="social-list card-item__social">
+      
+      
+      
+      <li class="social-list__item">
+        <a href="#" class="social-link social-link_ig social-list__link" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 20 20" class="social-link__icon">
+            <use xlink:href="images/svg-icons.svg#social-ig"></use>
+          </svg>
+        </a>
+      </li>
+      
+      
+      <li class="social-list__item">
+        <a href="#" class="social-link social-link_yt social-list__link" target="_blank">
+          <svg width="23" height="16" viewBox="0 0 23 16" class="social-link__icon">
+            <use xlink:href="images/svg-icons.svg#social-yt"></use>
+          </svg>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  
+</div><div class="card-item">
+  <div class="card-item__top">
+    <div class="card-item__head">
+      <h2 class="card-item__title">
+        <a href="#">
+          Экспресс Регистратор, юридическая фирма
+        </a>
+      </h2>
+      <div class="card-item-rate card-item__rate">
+        <div class="rating card-item-rate__rating">
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star _active">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star _active">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star _active">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star _active">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          
+          
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          
+        </div>
+        <a href="vip.html#anchor-review" class="card-item-rate__review">
+          12 отзывов
+        </a>
+      </div>
+    </div>
+    <div class="card-item__image">
+      <div class="card-item__logo">
+        <img src="images/company-logo-2.png" alt="Экспресс Регистратор, юридическая фирма">
+      </div>
+    </div>
+    <div class="card-item__content">
+      <div class="card-item__text">
+        <p>
+          В активе нашей команды пять побед подряд. v, также имевший к этому моменту продолжительную серию побед. 
+          
+        </p>
+        
+      </div>
+      <div class="card-item__btns">
+        <a href="tel:+89257964567" class="btn card-item__btn">
+          Позвонить
+        </a>
+        <a href="vip.html#anchor-prices" class="btn btn_cart card-item__btn" data-anchor>
+          <svg width="24" height="24" viewBox="0 0 24 24" class="btn__icon">
+            <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="card-item__footer">
+    <ul class="card-item-contacts card-item__contacts">
+      <li class="card-item-contacts__item">
+        <a href="tel+" class="card-item-contacts__link card-item-contacts__link_green card-item-contacts__phone">
+          <svg width="17" height="17" viewBox="0 0 17 17" class="card-item-contacts__icon">
+            <use xlink:href="images/svg-icons.svg#icon-phone"></use>
+          </svg>
+          <span>
+            8 (925) 796-45-67
+          </span>
+        </a>
+      </li>
+      <li class="card-item-contacts__item">
+        <span class="card-item-contacts__link">
+          <svg width="17" height="20" viewBox="0 0 17 20" class="card-item-contacts__icon">
+            <use xlink:href="images/svg-icons.svg#icon-map-pin"></use>
+          </svg>
+          <span>
+            г. Москва, Савёлкинский проезд д. 6
+          </span>
+        </span>
+      </li>
+    </ul>
+    <ul class="social-list card-item__social">
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  
+  <div class="card-item__tags">
+    <a href="#" class="btn btn_tag btn_outline btn_dark card-item__tag">
+      Белая бумага
+    </a>
+    <a href="#" class="btn btn_tag btn_outline btn_dark card-item__tag">
+      Картон
+    </a>
+    <a href="#" class="btn btn_tag btn_outline btn_dark card-item__tag">
+      Газеты
+    </a>
+    <a href="#" class="btn btn_tag btn_outline btn_dark card-item__tag">
+      Журналы и книги
+    </a>
+    <a href="#" class="btn btn_tag btn_outline btn_dark card-item__tag">
+      Картон
+    </a>
+    <a href="#" class="btn btn_tag btn_outline btn_dark card-item__tag">
+      Газеты
+    </a>
+  </div>
+  
+</div><div class="card-item">
+  <div class="card-item__top">
+    <div class="card-item__head">
+      <h2 class="card-item__title">
+        <a href="#">
+          Экспресс Регистратор, юридическая фирма
+        </a>
+      </h2>
+      <div class="card-item-rate card-item__rate">
+        <div class="rating card-item-rate__rating">
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star _active">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star _active">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star _active">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star _active">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          
+          
+          <svg width="16" height="15" viewBox="0 0 16 15" class="rating__star">
+            <use xlink:href="images/svg-icons.svg#icon-star"></use>
+          </svg>
+          
+        </div>
+        <a href="vip.html#anchor-review" class="card-item-rate__review">
+          12 отзывов
+        </a>
+      </div>
+    </div>
+    <div class="card-item__image">
+      <div class="card-item__logo">
+        <img src="images/company-logo-3.png" alt="Экспресс Регистратор, юридическая фирма">
+      </div>
+    </div>
+    <div class="card-item__content">
+      <div class="card-item__text">
+        <p>
+          В активе нашей команды пять побед подряд. v, также имевший к этому моменту продолжительную серию побед. 
+          
+        </p>
+        
+      </div>
+      <div class="card-item__btns">
+        <a href="tel:+89257964567" class="btn card-item__btn">
+          Позвонить
+        </a>
+        <a href="vip.html#anchor-prices" class="btn btn_cart card-item__btn" data-anchor>
+          <svg width="24" height="24" viewBox="0 0 24 24" class="btn__icon">
+            <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="card-item__footer">
+    <ul class="card-item-contacts card-item__contacts">
+      <li class="card-item-contacts__item">
+        <a href="tel+" class="card-item-contacts__link card-item-contacts__link_green card-item-contacts__phone">
+          <svg width="17" height="17" viewBox="0 0 17 17" class="card-item-contacts__icon">
+            <use xlink:href="images/svg-icons.svg#icon-phone"></use>
+          </svg>
+          <span>
+            8 (925) 796-45-67
+          </span>
+        </a>
+      </li>
+      <li class="card-item-contacts__item">
+        <span class="card-item-contacts__link">
+          <svg width="17" height="20" viewBox="0 0 17 20" class="card-item-contacts__icon">
+            <use xlink:href="images/svg-icons.svg#icon-map-pin"></use>
+          </svg>
+          <span>
+            г. Москва, Савёлкинский проезд д. 6
+          </span>
+        </span>
+      </li>
+    </ul>
+    <ul class="social-list card-item__social">
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  
+</div>
+                        </div>
+                        <div class="card-info">
+                            <div class="text-box text-box_t2 card-info__text">
+                                <h2>
+                                    Разнообразный и богатый опыт говорит нам, что социально-экономическое развитие (h2)
+                                </h2>
+                                <p>
+                                    требует определения и уточнения направлений прогрессивного развития. Банальные, но
+                                    неопровержимые выводы, а также некоторые особенности внутренней политики
+                                    представлены в исключительно положительном свете. Принимая во внимание показатели
+                                    успешности, высококачественный прототип будущего проекта влечет за собой процесс
+                                    внедрения и модернизации благоприятных перспектив. Не следует, однако, забывать, что
+                                    укрепление и развитие внутренней структуры предоставляет широкие возможности для
+                                    экспериментов, поражающих по своей масштабности и грандиозности. Для современного
+                                    мира граница обучения кадров способствует подготовке и реализации распределения
+                                    внутренних резервов и ресурсов. В своём стремлении улучшить пользовательский опыт мы
+                                    упускаем, что многие известные личности набирают популярность среди определенных
+                                    слоев населения, а значит, должны быть в равной степени предоставлены сами себе.
+                                </p>
+                                <h3>
+                                    Список (h3)
+                                </h3>
+                                <ul>
+                                    <li>
+                                        Белая бумага
+                                    </li>
+                                    <li>
+                                        Картон
+                                    </li>
+                                    <li>
+                                        Газеты
+                                    </li>
+                                    <li>
+                                        Журналы и книги
+                                    </li>
+                                </ul>
+                                <h3 class="text-box__table-head">
+                                    Цены на макулатуру в Москве
+                                </h3>
+                                <table class="styled-table">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                Категория
+                                            </th>
+                                            <th>
+                                                до 1000 кг
+                                                <span>цена за 1 кг</span>
+                                            </th>
+                                            <th>
+                                                от 1000 кг
+                                                <span>цена за 1 кг</span>
+                                            </th>
+                                            <th>
+                                                юр. лица
+                                                <span>за 1 тонну</span>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                Картон из беленых материалов
+                                            </th>
+                                            <td data-label="до 1000 кг / цена за 1 кг">
+                                                15 ₽
+                                            </td>
+                                            <td data-label="от 1000 кг / цена за 1 кг">
+                                                15 ₽
+                                            </td>
+                                            <td data-label="юр. лица / цена за 1 кг">
+                                                до 17 000 ₽
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                Банановые коробки из картона
+                                            </th>
+                                            <td data-label="до 1000 кг / цена за 1 кг">
+                                                15 ₽
+                                            </td>
+                                            <td data-label="от 1000 кг / цена за 1 кг">
+                                                15.3 ₽
+                                            </td>
+                                            <td data-label="юр. лица / цена за 1 кг">
+                                                до 16 500 ₽
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                Картонные коробки
+                                            </th>
+                                            <td data-label="до 1000 кг / цена за 1 кг">
+                                                14 ₽
+                                            </td>
+                                            <td data-label="от 1000 кг / цена за 1 кг">
+                                                14 ₽
+                                            </td>
+                                            <td data-label="юр. лица / цена за 1 кг">
+                                                до 14 000 ₽
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                Отходы потребления гофрокартона
+                                            </th>
+                                            <td data-label="до 1000 кг / цена за 1 кг">
+                                                11 ₽
+                                            </td>
+                                            <td data-label="от 1000 кг / цена за 1 кг">
+                                                11 ₽
+                                            </td>
+                                            <td data-label="юр. лица / цена за 1 кг">
+                                                до 14 000 ₽
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="map-reception-points" id="anchor-map-reception-points">
+                            <div class="map-reception-points__map" id="map-reception-points"></div>
+                        </div>
+                    </div>
+                    <aside class="inner-grid__sidebar">
+                        <div class="sidebar-item-box">
+                            <div class="sidebar-item">
+                                <a href="#" class="sidebar-item__inner">
+                                    <img src="images/sidebar-img.png" alt="Sezar Group" class="sidebar-item__img">
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <div class="footer__logo">
+          <img src="images/logo.png" alt="Eco-Gid">
+        </div>
+        <div class="footer__info">
+          <div class="footer__copy">
+            © ООО «Пиар сити», 2001 – 2018
+          </div>
+          <a href="#" class="footer__term">
+            Пользовательское соглашение
+          </a>
+        </div>
+      </div>
+      <div class="footer__right">
+        <div class="footer-contacts">
+          <div class="footer-contacts__item">
+            <div class="footer-contacts__label">
+              По вопросам размещения
+            </div>
+            <a href="tel:+79660995862" class="footer-contacts__phone">
+              +7 (966) 099-58-62
+            </a>
+          </div>
+          <div class="footer-contacts__item">
+            <div class="footer-contacts__label">
+              Электронная почта
+            </div>
+            <a href="mailto:ov@pr.city" class="footer-contacts__mail">
+              ov@pr.city
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script async src="https://api-maps.yandex.ru/2.1/?lang=ru-RU&onload=getYaMap" type="text/javascript"></script>
+</body>
+
+</html>
