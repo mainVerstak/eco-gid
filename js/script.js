@@ -1,5 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+  //+new
+  document.querySelectorAll('.menu-btn').forEach(function (item) {
+    item.addEventListener('click', function () {
+      document.body.classList.add('_show-fitler');
+      document.querySelector('.sidebar_filter').classList.add('_active');
+    })
+  })
+  //-new
 
   document.querySelectorAll('.btn-finter').forEach(function (item) {
     item.addEventListener('click', function () {
